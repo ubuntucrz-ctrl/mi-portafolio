@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio | Desarrolladora de Software</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+ <b>Tu Nombre</b>
+ <div id="links"></div>
+</nav>
+<main id="track">
+ <section id="inicio" data-n="Inicio">
+  <div class="txt">
+   <h1>Hola, soy<br>Tu Nombre</h1>
+   <div class="role"><span id="typed"></span><span class="cursor"></span></div>
+   <p>Diseño y programo aplicaciones web que se ven bien y funcionan mejor. Me gusta convertir ideas complejas en productos simples de usar.</p>
+   <div class="btns"><button class="btn" data-go="2">Ver proyectos</button><button class="btn alt" data-go="4">Contáctame</button></div>
+  </div>
+  <div class="photo"><img alt="Retrato de la desarrolladora" src="foto.jpg"></div>
+ </section>
+
+ <section id="sobre" data-n="Sobre mí">
+  <div class="txt">
+   <h2>Sobre mí</h2>
+   <p>Soy desarrolladora de software con experiencia creando aplicaciones web de principio a fin: desde la interfaz hasta la base de datos. Disfruto trabajar en equipo, aprender tecnologías nuevas y escribir código limpio que otras personas puedan mantener.</p>
+   <p>Cuando no estoy programando, estoy leyendo documentación, mejorando mis proyectos personales o buscando la mejor forma de explicar algo difícil.</p>
+  </div>
+  <div class="skills" id="skills">
+   <div class="sk" style="--v:90%"><div><span>HTML y CSS</span><span>90%</span></div><i></i></div>
+   <div class="sk" style="--v:85%"><div><span>JavaScript</span><span>85%</span></div><i></i></div>
+   <div class="sk" style="--v:75%"><div><span>Bases de datos (SQL)</span><span>75%</span></div><i></i></div>
+   <div class="sk" style="--v:70%"><div><span>Git y trabajo en equipo</span><span>70%</span></div><i></i></div>
+  </div>
+ </section>
+
+ <section id="proyectos" data-n="Proyectos">
+  <div class="wrap">
+   <h2>Proyectos</h2>
+   <div class="filters" id="filters">
+    <button class="tag on" data-f="todos">Todos</button><button class="tag" data-f="web">Web</button><button class="tag" data-f="datos">Datos</button>
+   </div>
+   <div class="grid" id="projects">
+    <article class="card" data-t="web"><h3>Tienda en línea</h3><p>Catálogo, carrito de compras y panel de administración.</p><span>HTML · CSS · JavaScript</span></article>
+    <article class="card" data-t="web"><h3>Gestor de tareas</h3><p>Aplicación para organizar pendientes con etiquetas y recordatorios.</p><span>JavaScript · API REST</span></article>
+    <article class="card" data-t="datos"><h3>Panel de ventas</h3><p>Gráficas y reportes a partir de una base de datos de ventas.</p><span>SQL · JavaScript</span></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="contacto" data-n="Contacto" class="contact">
+  <div class="txt">
+   <h2>Trabajemos juntos</h2>
+   <p>¿Tienes un proyecto o una vacante? Escríbeme y te respondo pronto.</p>
+   <a class="mail" href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+   <div class="btns">
+    <button class="btn" id="copy">Copiar correo</button>
+    <a class="btn alt" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn alt" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+   </div>
+  </div>
+ </section>
+</main>
+<div id="bar"></div>
+<script src="script.js"></script>
+</body>
+</html>
